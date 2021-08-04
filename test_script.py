@@ -1,4 +1,2 @@
-str = "three" + "three" + "three"
-print(str)
-str2 = "three" * 3
-print(str2)
+str = "A screaming comes accross the sky."
+print(str.replace("s","$"))
