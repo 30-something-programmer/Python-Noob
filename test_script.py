@@ -1,6 +1,10 @@
-shows = ['The Walking dead','Entourage','The Sopranos','The Vampire Diaries']
-i = 0
-for s in shows:
-    print(i)
-    print(s)
-    i += 1
+import csv
+import os
+
+films =  [["Top Gun", "Risky Business", "Minority Report"], ["Titanic", "The Revenant", "Inception"], ["Training Day", "Man on Fire", "Flight"]] 
+films_csv = os.path.join('Random Files','films.csv')
+with open(films_csv,'w',newline='') as c:
+    write = csv.writer(c,delimiter=',')
+    for film in films:
+           write.writerow(film)
+    

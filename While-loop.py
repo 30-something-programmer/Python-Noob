@@ -25,7 +25,7 @@ for i in range(1,6):
         continue
     print(i)
 
-#Nesting loops
+#Nesting loops 
 for i in range(1,3):
     print(i)
     for letter in ['a','b','c']:
